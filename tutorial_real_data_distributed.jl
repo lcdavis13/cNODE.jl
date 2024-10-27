@@ -1,3 +1,11 @@
+#!/usr/bin/env julia
+
+#SBATCH --nodes=25
+#SBATCH --ntasks=274
+#SBATCH --cpus-per-task=4
+#SBATCH --mem-per-cpu=2G
+#SBATCH --time=00:30:00
+
 using Random
 
 ################################################################################

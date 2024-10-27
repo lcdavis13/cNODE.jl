@@ -26,7 +26,7 @@ Flux.@functor FitnessLayer
 
 function (L::FitnessLayer)(p)
     f = L.W *p
-    ṗ = p .* (f - ones(size(p,1))*p'*f)
+    ṗ = p .* (f - ones(size(p,1))*p'*f)  # replicator equation is here
     return ( ṗ )
 end
 
